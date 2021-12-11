@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(74, 180, 139);
+}
+
+.info{
+    font-size: 24px;
+    margin: 20px;
+}
+
+.back h3{
+    margin: 20px;
+    color: white;
+}
+
+.container{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 1s ease;
+}
+
+.card:hover{
+    transform: rotateY(180deg);
+}
+.front{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #fdfdfc;
+    color: #333;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border: 4px solid rgb(68, 96, 187);
+    border-radius: 20px;
+}
+
+.back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: rgb(230, 158, 111);
+    color: #333;
+    transform: rotateY(180deg);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    border: 4px solid rgb(43, 40, 40);
+}
+
+.front img{
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+.container:hover>.card{
+    transform: rotateY(180deg);
+}

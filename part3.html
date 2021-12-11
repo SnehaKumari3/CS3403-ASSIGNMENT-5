@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CS3403_Assignment Part3</title>
+    <link rel="stylesheet" href="stylepart3.css" />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Name: SNEHA KUMARI</h1>
+      <h1>Roll Number: 2006223</h1>
+      <form class="form" id="form">
+        <div class="form-control">
+          <label>Enter text input to check is there all alphanumeric characters.</label>
+          <input
+            type="text"
+            id="alphanumeric"
+            placeholder="Enter Input"
+            autocomplete="off"
+          />
+          <i class="fa fa-check-circle"></i>
+          <i class="fa fa-exclamation-circle"></i>
+          <small>Error Message</small>
+        </div>
+        <div class="form-control">
+            <label>Enter text input to check is there correct number of characters.</label>
+            <input
+              type="text"
+              id="correctsize"
+              placeholder="Enter Input"
+              autocomplete="off"
+            />
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <div class="form-control">
+            <label>Enter email to check is the email valid.</label>
+            <input
+              type="text"
+              id="email"
+              placeholder="Enter Input"
+              autocomplete="off"
+            />
+            <i class="fa fa-check-circle"></i>
+            <i class="fa fa-exclamation-circle"></i>
+            <small>Error Message</small>
+          </div>
+          <input type="submit" value="Check Inputs" class="btn" />
+      </form>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
